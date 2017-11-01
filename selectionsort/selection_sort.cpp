@@ -4,7 +4,7 @@ using namespace std;
 
 int max_position(const vector<int>& v, int m) {
     int k = 0;
-    for (int i = 0; i <= m; ++i)
+    for (int i = 1; i <= m; ++i)
         if (v[i] > v[k]) k = i;
     return k;
 }
